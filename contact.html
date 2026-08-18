@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact | Maxime Miquel</title>
+<meta name="description" content="Get in touch with Maxime Miquel, founding GTM lead at Memtrace in Copenhagen.">
+<link rel="canonical" href="https://maximemiquel.com/contact.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Maxime Miquel">
+<meta property="og:description" content="Get in touch with Maxime Miquel, founding GTM lead at Memtrace.">
+<meta property="og:url" content="https://maximemiquel.com/contact.html">
+
+<style>
+  :root{
+    --ink:#0F1419; --paper:#F7F8F8; --mint:#00CCB4; --slate:#4A5551; --hair:#D8DEDC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px}
+
+  .site-header{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:26px 0;border-bottom:1px solid var(--hair);margin-bottom:52px;
+  }
+  .wordmark{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+  .site-nav{display:flex;gap:22px}
+  .site-nav a{
+    color:var(--slate);text-decoration:none;font-size:14px;font-weight:600;
+    border-bottom:2px solid transparent;padding-bottom:2px;transition:.15s;
+  }
+  .site-nav a:hover,.site-nav a.active{color:var(--ink);border-bottom-color:var(--mint)}
+  .site-nav a:focus-visible{outline:2px solid var(--mint);outline-offset:4px;border-radius:2px}
+
+  h1{font-size:clamp(30px,6.5vw,44px);font-weight:800;letter-spacing:-.02em;line-height:1.06}
+  .intro{color:var(--slate);font-size:17px;margin:16px 0 40px;max-width:52ch}
+  .intro b{color:var(--ink);font-weight:600}
+
+  form{max-width:520px}
+  .field{margin-bottom:20px}
+  label{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--slate);margin-bottom:8px}
+  input,textarea{
+    width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;
+    border:1px solid var(--hair);border-radius:10px;padding:12px 14px;transition:border-color .15s,box-shadow .15s;
+  }
+  input:focus,textarea:focus{outline:none;border-color:var(--mint);box-shadow:0 0 0 3px rgba(0,204,180,.15)}
+  textarea{min-height:150px;resize:vertical}
+  .hp{position:absolute;left:-9999px}
+
+  button{
+    background:var(--ink);color:#fff;border:0;border-radius:999px;
+    padding:13px 28px;font:inherit;font-weight:700;font-size:15px;cursor:pointer;
+    transition:background .15s,color .15s;
+  }
+  button:hover{background:var(--mint);color:var(--ink)}
+  button:disabled{opacity:.5;cursor:default}
+
+  .form-note{margin-top:18px;font-size:15px;display:none}
+  .form-note.ok{display:block;color:var(--ink)}
+  .form-note.err{display:block;color:#b23b3b}
+
+  .direct{margin-top:40px;font-size:15px;color:var(--slate)}
+  .direct a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--mint)}
+
+  .site-footer{
+    margin-top:64px;padding:26px 0 60px;border-top:1px solid var(--hair);
+    display:flex;gap:22px;flex-wrap:wrap;align-items:center;
+  }
+  .site-footer a{color:var(--slate);text-decoration:none;font-size:14px;font-weight:600;border-bottom:2px solid transparent;padding-bottom:2px;transition:.15s}
+  .site-footer a:hover{color:var(--ink);border-bottom-color:var(--mint)}
+  .foot-loc{margin-left:auto;color:var(--slate);font-size:13px}
+  @media (max-width:420px){.foot-loc{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <a class="wordmark" href="/">Maxime Miquel</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/blog.html">Writing</a>
+      <a href="/contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Get in touch</h1>
+    <p class="intro">If you lead an engineering team running AI agents on real production code, or you are a founder feeling the gap between a strong product and its market, I would like to hear how it is showing up for you. <b>I read everything.</b></p>
+
+    <!-- ====== ONE THING TO SET UP (2 min) ======
+         1. Go to formspree.io, sign up free, create a form.
+         2. Copy the form's endpoint ID (looks like: xnqkabcd).
+         3. Replace YOUR_FORM_ID below with it. That's it. -->
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <!-- spam honeypot, hidden from humans -->
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" id="submit-btn">Send</button>
+      <p class="form-note" id="form-note"></p>
+    </form>
+
+    <p class="direct">Prefer another channel? <a href="https://www.linkedin.com/in/maxime-miquel-708096181/" rel="me">LinkedIn</a> or <a href="https://x.com/MemtraceCPH" rel="me">X</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <a href="/blog.html">Writing</a>
+    <a href="https://memtrace.io">Memtrace</a>
+    <span class="foot-loc">Copenhagen</span>
+  </footer>
+
+</div>
+
+<script>
+  var form = document.getElementById('contact-form');
+  var note = document.getElementById('form-note');
+  var btn  = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    note.className = 'form-note';
+    note.textContent = '';
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (res) {
+      if (res.ok) {
+        form.reset();
+        note.className = 'form-note ok';
+        note.textContent = 'Thanks. Your message is on its way, I will be in touch.';
+        btn.textContent = 'Sent';
+      } else {
+        note.className = 'form-note err';
+        note.textContent = 'Something went wrong. You can also reach me on LinkedIn.';
+        btn.disabled = false;
+        btn.textContent = 'Send';
+      }
+    }).catch(function () {
+      note.className = 'form-note err';
+      note.textContent = 'Network error. You can also reach me on LinkedIn.';
+      btn.disabled = false;
+      btn.textContent = 'Send';
+    });
+  });
+</script>
+</body>
+</html>
