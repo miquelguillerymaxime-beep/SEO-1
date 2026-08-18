@@ -81,10 +81,12 @@
   @media (prefers-reduced-motion:reduce){main{animation:none;opacity:1}}
 
   .avatar{
-    width:112px;height:112px;border-radius:50%;object-fit:cover;display:block;
-    margin-bottom:26px;
+    width:92px;height:92px;border-radius:50%;object-fit:cover;display:block;flex:none;
     box-shadow:0 0 0 1px var(--hair), 0 6px 20px rgba(15,20,25,.08);
   }
+  .name-row{display:flex;align-items:center;gap:18px}
+  .name-row h1{margin:0}
+  .name-row .avatar{margin-left:auto}
   .eyebrow{
     font-size:12px;
     font-weight:700;
@@ -148,15 +150,17 @@
     color:var(--slate);
     letter-spacing:.02em;
   }
-  @media (max-width:420px){.loc{margin-left:0;width:100%;margin-top:4px}}
+  @media (max-width:420px){.loc{margin-left:0;width:100%;margin-top:4px}.name-row{gap:12px}.name-row .avatar{width:72px;height:72px}}
 </style>
 </head>
 <body>
 <main>
-  <img class="avatar" src="/maxime-miquel.jpg" alt="Maxime Miquel" width="112" height="112">
   <p class="eyebrow">Founding GTM Lead <b>·</b> Memtrace</p>
 
-  <h1>Maxime Miquel</h1>
+  <div class="name-row">
+    <h1>Maxime Miquel</h1>
+    <img class="avatar" src="/maxime-miquel.jpg" alt="Maxime Miquel" width="92" height="92">
+  </div>
   <hr class="rule">
 
   <p class="lede">I help engineering teams run AI coding agents reliably on real production codebases.</p>
