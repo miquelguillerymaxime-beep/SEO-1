@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <title>Maxime Miquel | Fractional CCO for deep-tech and B2B</title>
-<meta name="description" content="Fractional Chief Commercial Officer for early deep-tech and B2B startups. I build the go-to-market before you need a full-time VP Sales. Nordics, DACH, UK.">
+<meta name="description" content="Fractional Chief Commercial Officer for early deep-tech and B2B startups. I set the go-to-market strategy and run it, before you need a full-time VP Sales. Nordics, DACH, UK.">
 <link rel="canonical" href="https://maximemiquel.com/">
 
 <meta property="og:type" content="profile">
@@ -37,17 +37,10 @@
 </script>
 
 <style>
-  :root{
-    --ink:#0F1419; --paper:#F7F8F8; --card:#FFFFFF; --mint:#00CCB4;
-    --slate:#4A5551; --hair:#E1E6E4; --read:#232B29;
-  }
+  :root{--ink:#0F1419;--paper:#F7F8F8;--card:#FFFFFF;--mint:#00CCB4;--slate:#4A5551;--hair:#E1E6E4;--read:#232B29}
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-  body{
-    background:var(--paper); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    line-height:1.55;-webkit-font-smoothing:antialiased;
-  }
+  body{background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
   .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
   a{color:inherit}
 
@@ -67,7 +60,6 @@
   .hero{padding:76px 0 64px}
   .hero-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
   .eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);margin-bottom:22px}
-  .eyebrow b{color:var(--mint);font-weight:700}
   h1{font-size:clamp(36px,5.6vw,58px);font-weight:800;letter-spacing:-.02em;line-height:1.05}
   .lede{font-size:clamp(17px,2.4vw,20px);color:var(--ink);font-weight:600;margin:20px 0 16px;max-width:30ch}
   .lede em{font-style:italic;color:var(--mint)}
@@ -83,15 +75,17 @@
   .h2{font-size:clamp(27px,4vw,40px);font-weight:800;letter-spacing:-.02em;line-height:1.1;max-width:22ch}
   .h2 em{font-style:italic;color:var(--mint)}
   .sub{color:var(--read);font-size:17px;margin-top:16px;max-width:60ch}
-
-  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
-  .cardx{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:26px}
-  .cardx .tag{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mint);margin-bottom:12px}
-  .cardx h3{font-size:18px;font-weight:800;letter-spacing:-.01em;margin-bottom:9px}
-  .cardx p{color:var(--slate);font-size:15px;line-height:1.6}
-  @media (max-width:640px){.cards{grid-template-columns:1fr}}
-  .fit{margin-top:26px;color:var(--slate);font-size:15px;line-height:1.65;max-width:62ch}
+  .fit{color:var(--slate);font-size:15px;line-height:1.65;max-width:64ch}
   .fit b{color:var(--ink);font-weight:600}
+
+  .offers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .offer{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:26px;display:flex;flex-direction:column}
+  .offer .onum{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--mint);margin-bottom:14px}
+  .offer h3{font-size:19px;font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
+  .offer .price{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:12px}
+  .offer p{color:var(--slate);font-size:15px;line-height:1.6}
+  .offer .term{margin-top:auto;padding-top:16px;font-size:13px;color:var(--slate)}
+  @media (max-width:760px){.offers{grid-template-columns:1fr}}
 
   .thesis{background:var(--ink);color:#fff;border-radius:22px;padding:clamp(30px,5vw,56px)}
   .thesis .kick{color:#8A9491}
@@ -106,6 +100,21 @@
   .contrast .c.on .cl{color:var(--mint)}
   @media (max-width:620px){.contrast{grid-template-columns:1fr}}
 
+  .tfeature{background:var(--card);border:1px solid var(--hair);border-left:3px solid var(--mint);border-radius:16px;padding:30px;margin-top:38px}
+  .tfeature .q{font-size:18px;line-height:1.55;color:var(--ink);font-weight:600}
+  .tfeature .q p{margin-bottom:12px}
+  .tfeature .q p:last-child{margin-bottom:0}
+  .tfeature .who{margin-top:18px;padding-top:14px;border-top:1px solid var(--hair)}
+  .tfeature .who .n{font-weight:700;font-size:15px;color:var(--ink)}
+  .tfeature .who .r{font-size:13px;color:var(--slate);margin-top:2px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+  .tcard{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;display:flex;flex-direction:column}
+  .tcard .q{font-size:15px;line-height:1.62;color:var(--read)}
+  .tcard .who{margin-top:16px;padding-top:14px;border-top:1px solid var(--hair)}
+  .tcard .who .n{font-weight:700;font-size:14px;color:var(--ink)}
+  .tcard .who .r{font-size:13px;color:var(--slate);margin-top:2px;line-height:1.4}
+  @media (max-width:760px){.quotes{grid-template-columns:1fr}}
+
   .posts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px}
   .post{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;text-decoration:none;display:block;transition:border-color .15s,transform .15s}
   .post:hover{border-color:var(--mint);transform:translateY(-2px)}
@@ -114,6 +123,12 @@
   .post .d{color:var(--slate);font-size:15px;margin-top:10px}
   @media (max-width:620px){.posts{grid-template-columns:1fr}}
   .more-link{display:inline-block;margin-top:24px;font-weight:700;font-size:15px;text-decoration:none;color:var(--ink);border-bottom:2px solid var(--mint);padding-bottom:2px}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+  .step .sn{font-size:26px;font-weight:800;color:var(--mint);letter-spacing:-.02em}
+  .step h4{font-size:16px;font-weight:800;margin:8px 0 6px}
+  .step p{color:var(--slate);font-size:14px;line-height:1.55}
+  @media (max-width:640px){.steps{grid-template-columns:1fr;gap:26px}}
 
   .cta{text-align:center;padding:76px 0}
   .cta h2{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.1;max-width:24ch;margin:0 auto}
@@ -165,35 +180,34 @@
 <section class="block" id="work">
   <div class="wrap">
     <p class="kick"><span class="num">01</span> · How I work</p>
-    <h2 class="h2">Your first commercial leader, <em>before you need a full-time one.</em></h2>
-    <p class="sub">I embed part-time as your Chief Commercial Officer. I set the strategy and I run it myself, from the first outbound message to the first signed deals, until you have a repeatable engine and the case to hire full-time.</p>
+    <h2 class="h2">Three ways to work together, <em>depending on where you are.</em></h2>
+    <p class="sub" style="margin-bottom:6px">The rare thing is one person who sets the strategy and runs it. That is what a fractional CCO should be, and rarely is.</p>
 
-    <p class="fit" style="margin-top:22px"><b>The rare thing is one person who does both, the strategy and the hands.</b> That is what a fractional CCO should be, and rarely is.</p>
-
-    <div class="cards">
-      <div class="cardx">
-        <div class="tag">01</div>
-        <h3>Positioning and pricing</h3>
-        <p>Sharpen the ICP, the message and the pricing so a technical buyer can evaluate and buy without decoding a pitch.</p>
+    <div class="offers">
+      <div class="offer">
+        <div class="onum">01</div>
+        <h3>GTM Diagnostic &amp; Roadmap</h3>
+        <div class="price">From €4,500 · 1 to 2 weeks</div>
+        <p>I map your ICP, positioning, pricing and go-to-market, and hand you a roadmap you can run yourself or with me. The fastest way to see where your commercial engine is stuck.</p>
+        <div class="term">Fixed scope</div>
       </div>
-      <div class="cardx">
-        <div class="tag">02</div>
-        <h3>Pipeline and outbound</h3>
-        <p>Build and run the outbound motion, fill the pipeline, and open the doors that matter.</p>
+      <div class="offer">
+        <div class="onum">02</div>
+        <h3>Fractional CCO</h3>
+        <div class="price">From €5,000 / month</div>
+        <p>Embedded as your commercial lead, one to two days a week. I set the strategy and run it: outbound, pipeline, first deals, pricing, and the first hires. Regulated sectors, plus 20%.</p>
+        <div class="term">3-month minimum · scales with days</div>
       </div>
-      <div class="cardx">
-        <div class="tag">03</div>
-        <h3>First deals and design partners</h3>
-        <p>Close the early deals and turn users into design partners, references and case studies.</p>
-      </div>
-      <div class="cardx">
-        <div class="tag">04</div>
-        <h3>The commercial engine</h3>
-        <p>Set up the process, the tools and the first hires so the motion keeps running without me.</p>
+      <div class="offer">
+        <div class="onum">03</div>
+        <h3>Founding Commercial Build</h3>
+        <div class="price">From €18,000 · 90 days</div>
+        <p>A fixed-scope sprint to stand up the whole commercial motion and land the first deals. For when you want it built, and built fast.</p>
+        <div class="term">Outcome-based scope</div>
       </div>
     </div>
 
-    <p class="fit">This is for <b>very early deep-tech and B2B teams</b>, roughly two to five people, with real product pull and no commercial function yet. If you are ready for a full-time VP Sales, I will tell you, and point you to one. I work with founders across the Nordics, DACH and the UK.</p>
+    <p class="fit" style="margin-top:26px">This is for <b>very early deep-tech and B2B teams</b>, roughly two to five people, with real product pull and no commercial function yet. If you are ready for a full-time VP Sales, I will tell you, and point you to one. For the earliest teams, I also work on a reduced cash plus equity basis. I work with founders across the Nordics, DACH and the UK.</p>
   </div>
 </section>
 
@@ -216,9 +230,52 @@
   </div>
 </section>
 
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <p class="kick"><span class="num">03</span> · Working with me</p>
+    <h2 class="h2">What people say.</h2>
+
+    <div class="tfeature">
+      <div class="q">
+        <p>"I brought Maxime in as our founding GTM, and he built the commercial side of Memtrace on his own. He does what he says, and he works. Every call came back to the same question: what helps the company win.</p>
+        <p>Memtrace is a deeply technical product and Maxime is not an engineer, but he still got senior engineers to take it seriously and evaluate it on their own terms.</p>
+        <p>If you run a company and can't reach the people who need your product, talk to Maxime. Helping build that bridge is what he did for us."</p>
+      </div>
+      <div class="who">
+        <div class="n">Alex Thøger Holmberg</div>
+        <div class="r">Co-founder, Memtrace</div>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <div class="tcard">
+        <p class="q">"Highly driven, with a real gift for listening to clients, Maxime always works to find and propose the best solution for his partners. It will always be a pleasure to work alongside him again."</p>
+        <div class="who">
+          <div class="n">Alexandre Debarbieri</div>
+          <div class="r">Managing Director, CDR Contrôles</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <p class="q">"Working with Maxime day to day is a real pleasure. Dynamic and rigorous on every project, he also brings rare professionalism. Finding solutions for his clients is his priority."</p>
+        <div class="who">
+          <div class="n">Geoffrey Souris</div>
+          <div class="r">Director, Batimo Conseil</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <p class="q">"Maxime is an asset to any team or company. He has tremendous energy, a force of nature. He starts every day with a steel mindset and carries his enthusiasm and his passion for client service to everyone around him. A real joy to work with."</p>
+        <div class="who">
+          <div class="n">Assya Kheddam</div>
+          <div class="r">HR &amp; Career Transition Consultant</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="block" id="writing" style="padding-top:0">
   <div class="wrap">
-    <p class="kick"><span class="num">03</span> · Writing</p>
+    <p class="kick"><span class="num">04</span> · Writing</p>
     <h2 class="h2">Field notes on <em>selling deep-tech.</em></h2>
     <p class="sub">On how technical teams adopt, how deals actually close, and what the field teaches that no playbook can.</p>
 
@@ -235,6 +292,29 @@
       </a>
     </div>
     <a class="more-link" href="/blog.html">All writing</a>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <p class="kick">How we start</p>
+    <div class="steps">
+      <div class="step">
+        <div class="sn">1</div>
+        <h4>Intro call</h4>
+        <p>A 30-minute call. You tell me where you are. I tell you honestly whether I can help.</p>
+      </div>
+      <div class="step">
+        <div class="sn">2</div>
+        <h4>Scope and proposal</h4>
+        <p>If there is a fit, you get a clear scope, timeline and fixed price within a few days.</p>
+      </div>
+      <div class="step">
+        <div class="sn">3</div>
+        <h4>We begin</h4>
+        <p>Most engagements start within two weeks.</p>
+      </div>
+    </div>
   </div>
 </section>
 
