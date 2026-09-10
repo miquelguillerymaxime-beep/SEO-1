@@ -27,11 +27,9 @@
   "image": "https://maximemiquel.com/maxime-miquel.jpg",
   "jobTitle": "Fractional Chief Commercial Officer",
   "description": "Fractional CCO for early-stage, high-value B2B companies. Builds the commercial engine before founders need a full-time VP Sales. 15 years scaling B2B.",
-  "alumniOf": { "@type": "Organization", "name": "Memtrace", "url": "https://memtrace.io" },
   "homeLocation": { "@type": "Place", "name": "Copenhagen, Denmark" },
   "sameAs": [
-    "https://www.linkedin.com/in/maxime-miquel-708096181/",
-    "https://x.com/MemtraceCPH"
+    "https://www.linkedin.com/in/maxime-miquel-708096181/"
   ]
 }
 </script>
@@ -137,11 +135,18 @@
   .cta .cta-row{justify-content:center}
 
   footer{border-top:1px solid var(--hair);background:var(--card)}
-  .foot-inner{max-width:1000px;margin:0 auto;padding:26px 24px;display:flex;gap:22px;flex-wrap:wrap;align-items:center}
-  .foot-inner a{color:var(--slate);text-decoration:none;font-size:14px;font-weight:600;transition:color .15s}
-  .foot-inner a:hover{color:var(--ink)}
-  .foot-inner .cop{margin-left:auto;color:var(--slate);font-size:13px}
-  @media (max-width:520px){.foot-inner .cop{margin-left:0;width:100%}}
+  .foot-grid{max-width:1000px;margin:0 auto;padding:48px 24px 20px;display:grid;grid-template-columns:2fr 1fr;gap:40px}
+  .foot-brand .fb-name{font-weight:800;font-size:16px;color:var(--ink);margin-bottom:10px}
+  .foot-brand .fb-tag{color:var(--slate);font-size:14px;margin-bottom:16px;max-width:38ch}
+  .foot-brand a{display:block;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600;margin-bottom:6px}
+  .foot-brand a:hover{color:var(--mint)}
+  .foot-brand .fb-phones a{color:var(--slate);font-weight:500}
+  .foot-col{display:flex;flex-direction:column;gap:10px}
+  .foot-h{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);margin-bottom:4px}
+  .foot-col a{color:var(--slate);text-decoration:none;font-size:14px;font-weight:600}
+  .foot-col a:hover{color:var(--ink)}
+  .foot-bottom{max-width:1000px;margin:0 auto;padding:16px 24px 44px;border-top:1px solid var(--hair);color:var(--slate);font-size:13px}
+  @media (max-width:620px){.foot-grid{grid-template-columns:1fr;gap:28px}}
 
   a:focus-visible,.btn:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:4px}
 </style>
@@ -167,7 +172,7 @@
       <h1>Maxime Miquel</h1>
       <p class="lede">Most GTM advisors hand you a strategy. Most operators wait for one. <em>I do both.</em></p>
       <p class="hero-p">You have built something real and the first signs of pull. What you do not have yet is a go-to-market, a first commercial hire, or the budget for a full-time VP Sales. That is where I come in.</p>
-      <p class="hero-p">I embed as your fractional commercial lead. I set the go-to-market strategy and then run it myself: the outbound, the first deals, the pricing, the first hires. Fifteen years scaling B2B, most recently founding GTM at Memtrace in Copenhagen, where I built the commercial function from zero, sold across Europe, and shaped its first international deals.</p>
+      <p class="hero-p">I embed as your fractional commercial lead. I set the go-to-market strategy and then run it myself: the outbound, the first deals, the pricing, the first hires. Fifteen years scaling B2B, most recently founding GTM at an Antler-backed deep-tech startup in Copenhagen, where I built the commercial function from zero, sold across Europe, and shaped its first international deals.</p>
       <div class="cta-row">
         <a class="btn btn-ink" href="/contact.html">Work with me</a>
         <a class="btn btn-ghost" href="#work">How I work</a>
@@ -237,13 +242,13 @@
 
     <div class="tfeature">
       <div class="q">
-        <p>"I brought Maxime in as our founding GTM, and he built the commercial side of Memtrace on his own. He does what he says, and he works. Every call came back to the same question: what helps the company win.</p>
-        <p>Memtrace is a deeply technical product and Maxime is not an engineer, but he still got senior engineers to take it seriously and evaluate it on their own terms.</p>
+        <p>"I brought Maxime in as our founding GTM, and he built the commercial side of the company on his own. He does what he says, and he works. Every call came back to the same question: what helps the company win.</p>
+        <p>The product was deeply technical and Maxime is not an engineer, but he still got senior engineers to take it seriously and evaluate it on their own terms.</p>
         <p>If you run a company and can't reach the people who need your product, talk to Maxime. Helping build that bridge is what he did for us."</p>
       </div>
       <div class="who">
         <div class="n">Alex Thøger Holmberg</div>
-        <div class="r">Co-founder, Memtrace</div>
+        <div class="r">Co-founder, deep-tech startup</div>
       </div>
     </div>
 
@@ -330,14 +335,27 @@
 </section>
 
 <footer>
-  <div class="foot-inner">
-    <a href="/about.html">About</a>
-    <a href="/blog.html">Writing</a>
-    <a href="/contact.html">Contact</a>
-    <a href="https://www.linkedin.com/in/maxime-miquel-708096181/" rel="me">LinkedIn</a>
-    <a href="https://x.com/MemtraceCPH" rel="me">X</a>
-    <span class="cop">Copenhagen · © 2026 Maxime Miquel</span>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="fb-name">Maxime Miquel · Fractional CCO</div>
+      <p class="fb-tag">The missing link between strategy and execution.</p>
+      <a href="mailto:miquelguillery.maxime@gmail.com">miquelguillery.maxime@gmail.com</a>
+      <div class="fb-phones">
+        <a href="tel:+4591645166">+45 91 64 51 66</a>
+        <a href="tel:+33632722608">+33 6 32 72 26 08</a>
+      </div>
+      <a href="https://www.linkedin.com/in/maxime-miquel-708096181/" rel="me">LinkedIn</a>
+    </div>
+    <div class="foot-col">
+      <div class="foot-h">Navigation</div>
+      <a href="#work">How I work</a>
+      <a href="/about.html">About</a>
+      <a href="/blog.html">Writing</a>
+      <a href="/workshops.html">Workshops</a>
+      <a href="/contact.html">Contact</a>
+    </div>
   </div>
+  <div class="foot-bottom">Copenhagen · © 2026 Maxime Miquel</div>
 </footer>
 
 </body>
