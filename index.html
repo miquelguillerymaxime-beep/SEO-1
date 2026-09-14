@@ -59,11 +59,24 @@
   .hero-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
   .eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);margin-bottom:22px}
   h1{font-size:clamp(36px,5.6vw,58px);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+  .h1-q{font-size:clamp(26px,3.8vw,38px);line-height:1.14;max-width:40ch}
+  .h1-q em{font-style:italic;color:var(--mint)}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}
+  .vs-h{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8A9491;padding:0 4px 4px}
+  .vs-h.on{color:var(--mint)}
+  .vs-c{border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 16px;font-size:15px;color:#E7ECEA;line-height:1.5}
+  .vs-c b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8A9491;margin-bottom:5px}
+  .vs-c.on{border-color:rgba(0,204,180,.4)}
+  .vs-c.on b{color:var(--mint)}
+  @media (max-width:620px){.vs{grid-template-columns:1fr}}
   .lede{font-size:clamp(17px,2.4vw,20px);color:var(--ink);font-weight:600;margin:20px 0 16px;max-width:30ch}
   .lede em{font-style:italic;color:var(--mint)}
   .hero-p{font-size:16px;color:var(--slate);line-height:1.62;margin-bottom:14px;max-width:56ch}
   .hero-p:last-of-type{margin-bottom:30px}
   .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .proof{margin-top:22px;font-size:13px;color:var(--slate);letter-spacing:.01em;text-align:left}
+  .proof b{color:var(--ink);font-weight:700}
+  .proof span{color:var(--mint);margin:0 4px}
   .hero-photo{width:190px;height:190px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 1px var(--hair),0 14px 40px rgba(15,20,25,.12)}
   @media (max-width:720px){.hero-grid{grid-template-columns:1fr}.hero-photo{width:120px;height:120px;order:-1}}
 
@@ -149,7 +162,18 @@
   @media (max-width:620px){.foot-grid{grid-template-columns:1fr;gap:28px}}
 
   a:focus-visible,.btn:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:4px}
+  p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+  .eyebrow,.kicker,.lede,.fb-tag,.figure figcaption,.thesis .quote,.form-note{text-align:left}
+  .cta p{text-align:center}
 </style>
+<!-- ANALYTICS (Nimrod's rule: measure every page). Inert until you activate it:
+     1. Create a GA4 property, copy the Measurement ID (G-XXXXXXXXXX)
+     2. Create a Microsoft Clarity project, copy the Project ID
+     3. Replace the two placeholders below, then remove the surrounding comment markers.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","CLARITY_ID");</script>
+-->
 </head>
 <body>
 
@@ -168,15 +192,15 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Fractional Chief Commercial Officer</p>
-      <h1>Maxime Miquel</h1>
-      <p class="lede">A product and no one to sell it? Or customers, and no one to turn them into <em>a commercial function?</em></p>
+      <p class="eyebrow">Maxime Miquel <b>·</b> Fractional Chief Commercial Officer</p>
+      <h1 class="h1-q">A product and no one to sell it?<br>Or customers, and no one to turn them into <em>a commercial function?</em></h1>
       <p class="hero-p">Both are the gap I close. I come in as the builder: ICP, positioning, outbound, the first deals. I stay as the seat: the team, the pricing, the forecast, the commercial calls that stop being yours to make.</p>
       <p class="hero-p">Most GTM advisors hand you a strategy. Most operators wait for one. <b>I do both.</b> Fifteen years scaling B2B, most recently founding GTM at Memtrace, an Antler-backed startup in Copenhagen, where I built the commercial function from zero, sold across Europe, and shaped its first international deals.</p>
       <div class="cta-row">
         <a class="btn btn-ink" href="/contact.html">Work with me</a>
         <a class="btn btn-ghost" href="#work">How I work</a>
       </div>
+      <p class="proof"><b>15 years</b> scaling B2B <span>·</span> <b>3 companies</b> from seed to scale <span>·</span> <b>1 IPO</b> <span>·</span> <b>€200M+</b> revenue built</p>
     </div>
     <img class="hero-photo" src="/maxime-miquel.jpg" alt="Maxime Miquel" width="190" height="190">
   </div>
@@ -185,7 +209,7 @@
 <section class="block" id="work">
   <div class="wrap">
     <p class="kick"><span class="num">01</span> · How I work</p>
-    <h2 class="h2">I come in as the builder. <em>I stay as the seat.</em></h2>
+    <h2 class="h2">I come in as the builder.<br><em>I stay as the seat.</em></h2>
     <p class="sub" style="margin-bottom:6px">The first two build the road: the go-to-market, from zero to the first deals. The third runs the fleet: the commercial seat, once there is revenue to run. Which one you need depends on where you are.</p>
 
     <div class="offers">
@@ -220,16 +244,16 @@
   <div class="wrap">
     <div class="thesis">
       <p class="kick"><span class="num">02</span> · The thesis</p>
-      <p class="quote">Most companies don't stall on a weak product. They stall because no one built the bridge <em>to the people who need it.</em></p>
-      <div class="contrast">
-        <div class="c">
-          <div class="cl">The trap</div>
-          <p>A product too technical to evaluate, or a commercial function that never got built. Both leave a strong product with no path to its market.</p>
-        </div>
-        <div class="c on">
-          <div class="cl">The work</div>
-          <p>Build the bridge. The product is rarely the blocker. The connection to the buyer is, and that is what I do.</p>
-        </div>
+      <p class="quote">Most companies don't stall on a weak product.<br>They stall because no one built the bridge <em>to the people who need it.</em></p>
+      <div class="vs">
+        <div class="vs-h">Without a commercial lead</div>
+        <div class="vs-h on">With one</div>
+        <div class="vs-c"><b>Pipeline</b>A spreadsheet the founder updates at midnight.</div>
+        <div class="vs-c on"><b>Pipeline</b>A motion that runs, owned and forecastable.</div>
+        <div class="vs-c"><b>First deals</b>Closed on luck and the founder's charisma.</div>
+        <div class="vs-c on"><b>First deals</b>Landed on purpose, with a way in that repeats.</div>
+        <div class="vs-c"><b>Founder's time</b>Selling between features. Both suffer.</div>
+        <div class="vs-c on"><b>Founder's time</b>Building. Someone else owns the number.</div>
       </div>
     </div>
   </div>

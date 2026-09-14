@@ -50,11 +50,11 @@
   form{max-width:520px}
   .field{margin-bottom:20px}
   label{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--slate);margin-bottom:8px}
-  input,textarea{
+  input,select,textarea{
     width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;
     border:1px solid var(--hair);border-radius:10px;padding:12px 14px;transition:border-color .15s,box-shadow .15s;
   }
-  input:focus,textarea:focus{outline:none;border-color:var(--mint);box-shadow:0 0 0 3px rgba(0,204,180,.15)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--mint);box-shadow:0 0 0 3px rgba(0,204,180,.15)}
   textarea{min-height:150px;resize:vertical}
   .hp{position:absolute;left:-9999px}
 
@@ -81,7 +81,18 @@
   .site-footer a:hover{color:var(--ink);border-bottom-color:var(--mint)}
   .foot-loc{margin-left:auto;color:var(--slate);font-size:13px}
   @media (max-width:420px){.foot-loc{margin-left:0;width:100%}}
+  p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+  .eyebrow,.kicker,.lede,.fb-tag,.figure figcaption,.thesis .quote,.form-note{text-align:left}
+  .cta p{text-align:center}
 </style>
+<!-- ANALYTICS (Nimrod's rule: measure every page). Inert until you activate it:
+     1. Create a GA4 property, copy the Measurement ID (G-XXXXXXXXXX)
+     2. Create a Microsoft Clarity project, copy the Project ID
+     3. Replace the two placeholders below, then remove the surrounding comment markers.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","CLARITY_ID");</script>
+-->
 </head>
 <body>
 <div class="wrap">
@@ -112,6 +123,17 @@
       <div class="field">
         <label for="email">Email</label>
         <input id="email" type="email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="need">What do you need?</label>
+        <select id="need" name="need">
+          <option value="">Choose one</option>
+          <option>GTM Diagnostic &amp; Roadmap</option>
+          <option>Fractional CCO (monthly)</option>
+          <option>Founding Commercial Build (90 days)</option>
+          <option>Workshop</option>
+          <option>Not sure yet</option>
+        </select>
       </div>
       <div class="field">
         <label for="message">Message</label>
